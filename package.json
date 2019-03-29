@@ -5,13 +5,17 @@
   "author": "Kevin Schaich",
   "license": "MIT",
   "scripts": {
-    "test": "node src/index.js",
-    "test-plaid": "node src/scripts/testPlaid.js",
-    "test-sheets": "node src/scripts/testSheets.js",
-    "token-plaid": "node src/scripts/tokenPlaid.js",
-    "token-sheets": "node src/scripts/tokenSheets.js"
+    "dev": "next ./src",
+    "build": "next build ./src",
+    "start": "next start ./src",
+    "mintable": "node ./src/index.js",
+    "test-plaid": "node ./src/scripts/testPlaid.js",
+    "test-sheets": "node ./src/scripts/testSheets.js",
+    "token-plaid": "node ./src/scripts/tokenPlaid.js",
+    "token-sheets": "node ./src/scripts/tokenSheets.js"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
@@ -20,6 +24,7 @@
     "lodash": "^4.17.11",
     "moment": "^2.23.0",
     "next": "^8.0.3",
+    "node-sass": "^4.11.0",
     "plaid": "^2.10.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
